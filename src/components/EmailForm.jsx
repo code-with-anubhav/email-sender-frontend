@@ -89,7 +89,7 @@ const EmailForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://pharmdel.onrender.com/send-email",
+        "https://email-sender-backend-b57c.onrender.com/send-email",
         formData
       );
       alert(response.data.message);
